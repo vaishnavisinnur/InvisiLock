@@ -52,6 +52,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// InvisiLock custom colors
+				'crypto-surface': 'hsl(var(--crypto-surface))',
+				'crypto-surface-hover': 'hsl(var(--crypto-surface-hover))',
+				'crypto-border': 'hsl(var(--crypto-border))',
+				'crypto-text-muted': 'hsl(var(--crypto-text-muted))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
