@@ -2,10 +2,11 @@ import { useState, useRef } from "react";
 import { Shield, ArrowLeft, Upload, Download, Eye, EyeOff } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const ImageEncryption = () => {
   const [activeTab, setActiveTab] = useState("encryption");
@@ -45,7 +46,12 @@ const ImageEncryption = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background transition-colors duration-300">
+      {/* Theme Toggle */}
+      <div className="absolute top-6 right-6 z-10">
+        <ThemeToggle />
+      </div>
+
       {/* Header */}
       <div className="flex items-center justify-between p-6 border-b border-crypto-border">
         <Link to="/" className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors">

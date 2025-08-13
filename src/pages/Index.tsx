@@ -1,11 +1,17 @@
-import { Shield, FileText, Image, File, ArrowRight } from "lucide-react";
+import { Shield, FileText, Image, File } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background transition-colors duration-300">
+      {/* Theme Toggle */}
+      <div className="absolute top-6 right-6 z-10">
+        <ThemeToggle />
+      </div>
+
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center px-6 py-20">
         {/* Logo */}
