@@ -6,7 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import TextEncryption from "./pages/TextEncryption";
-import { ImageEncryption } from "./pages/ImageEncryption";
+import ImageEncryption from "./pages/ImageEncryption";
 import FileEncryption from "./pages/FileEncryption";
 import NotFound from "./pages/NotFound";
 
